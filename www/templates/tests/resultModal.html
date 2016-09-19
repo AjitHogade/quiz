@@ -1,0 +1,23 @@
+  <ion-modal-view>
+      <ion-header-bar>
+         <h1 class = "title">Your-Score</h1>
+      </ion-header-bar>
+    
+      <ion-content>
+      <div class="card list animated bounceIn">
+      <center>    <h1>{{score}} / 10</h1>
+</center>
+</div>
+               <a href="#/app/home">
+<button class = "button icon icon-left ion-ios-close-outline" ng-click="closeModal()"
+           >Done</button></a>
+
+           <div class="button-bar">
+   <a href="#/app/html_test1_questions/0" class="button button-assertive" ng-click="closeModal()">Start Again</a>
+      <a href="#/app/home" class="button button-positive" ng-click="closeModal()">Done</a>
+
+</div> 
+               
+
+      </ion-content>
+   </ion-modal-view>

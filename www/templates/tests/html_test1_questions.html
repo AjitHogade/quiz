@@ -1,0 +1,47 @@
+
+
+<ion-view view-title="Question:{{html.id+1}}">
+  <ion-content class="padding">
+ <div class="item item-text-wrap">
+      {{html.name}}
+   </div>
+      <div class = "row">
+   <div class = "col">
+     <button id="opt_1" class="button button-positive" ng-click="verifyAndNext('{{html.correct_ans}}','opt_1','{{html.id}}')" style="width:100%">
+      {{html.opt_1}}
+</button>
+
+   </div>
+   <div class = "col">
+     
+      <button id="opt_2" class="button button-positive" ng-click="verifyAndNext('{{html.correct_ans}}','opt_2','{{html.id}}')" style="width:100%">
+      {{html.opt_2}}
+</button>
+   </div>
+  
+</div>
+
+<div class = "row">
+   <div class = "col">
+      <button id="opt_3" class="button button-positive" ng-click="verifyAndNext('{{html.correct_ans}}','opt_3','{{html.id}}')" style="width:100%">
+      {{html.opt_3}}
+</button>
+   </div>
+   <div class = "col"> <button class="button button-positive" id="opt_4" ng-click="verifyAndNext('{{html.correct_ans}}','opt_4','{{html.id}}')" style="width:100%">
+      {{html.opt_4}}
+</button>
+</div>
+ </div>
+ <a href="#/app/html_test1_questions/{{html.id+1}}">
+ <button class="button button-positive" id="opt_4" ng-click="checkMaxQues('{{html.id}}')" style="width:100%"> 
+Next</button></a>
+ <input id="selected_ans" type="hidden" name="">
+
+  </ion-content>
+  <div class="bar bar-footer bar-stable">
+
+   <h1 class="title"><span id="time">05:00</span> minutes!</div>
+</h1>
+</div>
+</ion-view>
+
