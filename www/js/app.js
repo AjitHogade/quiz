@@ -56,6 +56,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'dataProviders.servic
 
 
       .state('app.html_test1_questions', {
+                        cache: false,
+
       url: '/html_test1_questions/:quesId',
       views: {
         'menuContent': {
@@ -65,14 +67,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'dataProviders.servic
       }
     })
 
-      .state('app.html_test2_start', {
-      url: '/html_test2_start',
+     .state('app.html_test2_questions', {
+                        cache: false,
+
+      url: '/html_test2_questions/:quesId',
       views: {
         'menuContent': {
-          templateUrl: 'templates/tests/html_test2_start.html'
+          templateUrl: 'templates/tests/html_test2_questions.html',
+          controller: 'HtmlCtrl'
         }
       }
     })
+
+//--------------------CSS__________________________//
+
        .state('app.css_test', {
       url: '/css_test',
       views: {
@@ -82,47 +90,70 @@ angular.module('starter', ['ionic', 'starter.controllers', 'dataProviders.servic
       }
     })
 
-       .state('app.css_test1_start', {
-      url: '/css_test1_start',
+  .state('app.css_test1_questions', {
+                        cache: false,
+
+      url: '/css_test1_questions/:quesId',
       views: {
         'menuContent': {
-          templateUrl: 'templates/tests/css_test1_start.html'
+          templateUrl: 'templates/tests/css_test1_questions.html',
+          controller: 'CssCtrl'
         }
       }
     })
 
-        .state('app.css_test2_start', {
-      url: '/css_test2_start',
+     .state('app.css_test2_questions', {
+                        cache: false,
+
+      url: '/css_test2_questions/:quesId',
       views: {
         'menuContent': {
-          templateUrl: 'templates/tests/css_test2_start.html'
+          templateUrl: 'templates/tests/css_test2_questions.html',
+          controller: 'CssCtrl'
         }
       }
     })
+
+   //--------------------JS__________________________//
+   
         .state('app.js_test', {
       url: '/js_test',
       views: {
         'menuContent': {
-          templateUrl: 'templates/tests/js_test.html'
+          templateUrl: 'templates/tests/js_test.html',
+                    controller: 'JsCtrl'
+
         }
       }
     })
-        .state('app.js_test1_start', {
-      url: '/js_test1_start',
+        .state('app.js_test1_questions', {
+                                  cache: false,
+
+      url: '/js_test1_questions/:quesId',
       views: {
         'menuContent': {
-          templateUrl: 'templates/tests/js_test1_start.html'
+          templateUrl: 'templates/tests/js_test1_questions.html',
+                              controller: 'JsCtrl'
+
         }
       }
     })
-        .state('app.js_test2_start', {
-      url: '/js_test2_start',
+        .state('app.js_test2_questions', {
+                                  cache: false,
+
+      url: '/js_test2_questions/:quesId',
       views: {
         'menuContent': {
-          templateUrl: 'templates/tests/js_test2_start.html'
+          templateUrl: 'templates/tests/js_test2_questions.html',
+                              controller: 'JsCtrl'
+
         }
       }
     })
+
+
+   //--------------------PHP__________________________//
+
          .state('app.php_test', {
       url: '/php_test',
       views: {
@@ -131,24 +162,35 @@ angular.module('starter', ['ionic', 'starter.controllers', 'dataProviders.servic
         }
       }
     })
-          .state('app.php_test1_start', {
-      url: '/php_test1_start',
+
+          .state('app.php_test1_questions', {
+        cache: false,
+      url: '/php_test1_questions/:quesId',
       views: {
         'menuContent': {
-          templateUrl: 'templates/tests/php_test1_start.html'
+          templateUrl: 'templates/tests/php_test1_questions.html',
+                                        controller: 'PhpCtrl'
+
         }
       }
     })
 
-           .state('app.php_test2_start', {
-      url: '/php_test2_start',
+           .state('app.php_test2_questions', {
+        cache: false,
+      url: '/php_test2_questions/:quesId',
       views: {
         'menuContent': {
-          templateUrl: 'templates/tests/php_test2_start.html'
+          templateUrl: 'templates/tests/php_test2_questions.html',
+                                        controller: 'PhpCtrl'
+
         }
       }
     })
+
+   //--------------------CPP__________________________//
+
           .state('app.c_test', {
+            cache: false,
       url: '/c_test',
       views: {
         'menuContent': {
@@ -157,23 +199,35 @@ angular.module('starter', ['ionic', 'starter.controllers', 'dataProviders.servic
       }
     })
 
-          .state('app.c_test1_start', {
-      url: '/c_test1_start',
+    .state('app.c_test1_questions', {
+      cache: false,
+      url: '/c_test1_questions/:quesId',
       views: {
         'menuContent': {
-          templateUrl: 'templates/tests/c_test1_start.html'
+          templateUrl: 'templates/tests/c_test1_questions.html',
+          controller: 'CppCtrl'
+
         }
       }
     })
 
-          .state('app.c_test2_start', {
-      url: '/c_test2_start',
+
+
+      .state('app.c_test2_questions', {
+          cache: false,
+      url: '/c_test2_questions/:quesId',
       views: {
         'menuContent': {
-          templateUrl: 'templates/tests/c_test2_start.html'
+          templateUrl: 'templates/tests/c_test2_questions.html',
+          controller: 'CppCtrl'
+
         }
       }
     })
+
+             //--------------------JAVA__________________________//
+
+
            .state('app.java_test', {
       url: '/java_test',
       views: {
@@ -182,19 +236,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'dataProviders.servic
         }
       }
     })
-            .state('app.java_test1_start', {
-      url: '/java_test1_start',
+            .state('app.java_test1_questions', {
+              cache:false,
+      url: '/java_test1_questions/:quesId',
       views: {
         'menuContent': {
-          templateUrl: 'templates/tests/java_test1_start.html'
+          templateUrl: 'templates/tests/java_test1_questions.html',
+          controller:'JavaCtrl'
         }
       }
     })
-             .state('app.java_test2_start', {
-      url: '/java_test2_start',
+             .state('app.java_test2_questions', {
+              cache:false,
+      url: '/java_test2_questions/:quesId',
       views: {
         'menuContent': {
-          templateUrl: 'templates/tests/java_test2_start.html'
+          templateUrl: 'templates/tests/java_test2_questions.html',
+                    controller:'JavaCtrl'
+
         }
       }
     })
